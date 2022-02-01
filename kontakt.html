@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+      
+        #kontenjer {
+            width: 90%;
+            margin: auto;
+            display: block;            
+        }      
+        
+        #contact {
+            width: 100%;
+            padding-bottom: 10px;         
+        }
+
+        #adress {
+            padding-top: 40px;
+            width: 100%;
+            height: 200px;
+            
+        }
+
+        @media only screen and (min-width: 1200px) {
+            #kontenjer {
+                display: flex;
+                width: 100%;
+                margin: auto;
+                border: darkgreen solid 3px;
+            }
+            #contact {
+                margin: 40px;
+                margin-left: 5%;
+                width: 40%;
+                padding-bottom: 10px;
+                float: left;
+            
+            }
+
+            #adress {
+                padding-top: 0px;
+                margin: 40px;
+                margin-left: -10%;
+                margin-right: 5%;
+                width: 70%;
+                height: 200px;
+                
+            }
+
+        }
+
+
+
+        .contact-label {
+            text-decoration: solid;
+            font-weight: bold;
+            color: forestgreen;
+        }
+        
+        .contact-titles {
+            color: forestgreen;
+        }
+
+        #contact-name {
+            width: 50%;
+        }
+        #contact-mail {
+            width: 40%;
+        }
+        #contact-message {
+            width: 60%;
+            line-height:400%;
+        }
+
+        #contact-submit {
+            background-color: #7DCF85;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 30%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        #mapa {
+            display: block;
+            margin: 16px 0 16px 0;
+            width: 100%;
+            height: 350px;
+            border: 2px solid rgb(0, 139, 104);
+            border-bottom: 2px solid rgb(0, 139, 65);
+            padding-bottom: 10px;
+        }
+
+
+
+
+
+
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        </style>
+    <title>Kontakt</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><a id="logo-link" href="./index.html"><img src="img/logo_1.svg" alt="Homepage"></a></div>
+        <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
+        <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a><span id="cart-counter" class="cart-basket"></span></div>
+        <nav id="main-nav" role="navigation">
+            <ul>
+                
+                <li><a class="nav-link" href="./about.html">O nama</a></li>
+                <li><a class="nav-link" href="./products.html">Proizvodi</a></li>
+                <li><a class="nav-link" href="./gallery.html">Galerija</a></li>
+                <li><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-heading">Kontakt</h1><br></br>
+        <div id="kontenjer">
+            <div id="contact">          
+
+                    <h2 class="contact-titles" >Kontaktirajte nas</h2><br></br>
+                    <div>
+                        <label class="contact-label" for="contact-name">Vaše ime:</label>
+                        <input class="contact-input" id="contact-name" type="text"/>
+                    </div>
+                    <div>
+                        <label class="contact-label" for="contact-mail">Vaš imejl:</label>
+                        <input class="contact-input" id="contact-mail" type="text" />
+                    </div>
+                    <div>
+                        <label class="contact-label" for="contact-message">Vaša poruka:</label>
+                        <textarea id="contact-message"></textarea>
+                    </div>
+                    <div>
+                        <button id="contact-submit" type="submit">Pošalji poruku</button>
+                    </div>
+
+            </div>
+
+            <div id="adress">
+
+                <h2 class="contact-titles">Posetite nas</h2><br></br>
+                <p class="contact-label" >Adresa:</p>
+                <p>Jovana Brankovića 74, Beograd, 11010 Beograd</p>
+                <div>
+                    <iframe id="mapa" src="https://maps.google.com/maps?q=%D0%88%D0%BE%D0%B2%D0%B0%D0%BD%D0%B0%20%D0%91%D1%80%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B%D0%B0%2074,%20%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div><br></br>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="cd-shadow-layer"></div>
+
+    <div id="cd-cart">
+        <h2>Korpa</h2>
+        <ul class="cd-cart-items">
+
+        </ul>
+        <div class="cd-cart-total">
+            <p>Total <span>0</span> RSD</p>
+        </div>
+        <a href="#0" class="checkout-btn">Poruči</a>
+
+    </div>
+
+    <div id="checkout-container">
+
+            <div class="col-50">
+                <h3 id="kartica-h3">Informacije o kupcu</h3>
+                <label for="fname"><i class="fa fa-user"></i> Ime</label>
+                <input type="text" id="fname" name="firstname" class="invalid" placeholder="">
+                <label for="lname"></i> Prezime</label>
+                <input type="text" id="lname" name="lastname" class="invalid" placeholder="">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" class="invalid" placeholder="">
+            </div>
+                
+            <div class="col-50">
+                <label for="state">Država</label>
+                <input type="text" id="state" name="state" class="invalid" placeholder="Srbija">
+            </div>
+            <div class="col-50">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
+                <input type="text" id="adr" name="address" class="invalid" placeholder="">
+                <label for="city"><i class="fa fa-institution"></i> Grad</label>
+                <input type="text" id="city" name="city" class="invalid" placeholder="">
+            </div>
+            <div class="col-50">
+                <label for="zip">Poštanski kod:</label>
+                <input type="text" id="zip" name="zip" class="invalid" placeholder="11000">
+            </div>                    
+            
+            <button class="btn" id="payment-btn"> Plaćanje </button>
+
+
+    </div>
+
+    <div id="payment-container">
+
+            <h3 id="kartica-h3">Plaćanje</h3>
+
+            <div class="col-50">  
+                <label for="cars">Izaberite način plaćanja:</label>
+
+                <select name="nacin-placanja" id="nacin-placanja">
+                    <option value="pouzece">Pouzecem</option>
+                    <option value="kartica">Karticom</option>
+                </select>
+            </div><br />
+
+
+
+            <div class="col-50" id="kartica">          
+                <label for="fname">Izbor kartice:</label>
+                <div class="icon-container">
+                    <i class="fa fa-cc-visa" id="ccvisa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" id ="ccamex"style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" id="ccmaster" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" id="ccdiscover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Ime na kartici:</label>
+                <input type="text" id="cname" name="cardname" class="invalid-c" placeholder="">
+                <label for="ccnum">Broj kartice:</label>
+                <input type="text" id="ccnum" name="cardnumber" class="invalid-c" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Mesec isticanja:</label>
+                <input type="text" id="expmonth" name="expmonth" class="invalid-c" placeholder="September">
+                <div class="row">
+                    <div class="col-50">
+                        <label for="expyear">Godina isticanja:</label>
+                        <input type="text" id="expyear" name="expyear" class="invalid-c" placeholder="2021">
+                    </div>
+                    <div class="col-50">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" class="invalid-c" placeholder="352">
+                    </div>
+                </div>
+                
+            </div>
+            <input type="submit" value="Poruči" class="btn" id='forder-btn'>
+
+    </div>
+    <script src="./js/cart_data.js"></script>
+    <script src="./js/skripta.js"></script>
+    <script>
+
+        contact_submit = document.querySelector('#contact-submit');
+        contact_submit.onclick = () => {
+            contact_name = document.querySelector('#contact-name');
+            contact_mail = document.querySelector('#contact-mail');
+            contact_message = document.querySelector('#contact-message');
+
+            alert(contact_name.value + ' // ' + contact_mail.value + ' // ' + contact_message.value)
+            
+            contact_name.value = ''
+            contact_mail.value = ''
+            contact_message.value = ''
+        }
+
+    </script>
+    <footer>
+        <p>Autor: Marko Milosavljević</p>
+        <p><a href="mailto:markomilosavljevic@yahoo.com">markomilosavljevic@yahoo.com</a></p>
+    </footer>
+</body>
+</html>

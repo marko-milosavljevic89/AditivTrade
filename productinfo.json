@@ -1,0 +1,102 @@
+[ 
+{"Emulgatori": [
+        {"Izolati": [
+            {"name": "izolat_kuter", "price": 355.00, "label": "Izolat soje (Kina) - kuterovanje", "unit": "kg", "increment": 1}, 
+            {"name": "izolat_hidriranje", "price": 385.00, "label": "Izolat soje (Kina) - za hidriranje", "unit": "kg", "increment": 1}, 
+            {"name": "izolat_injekt", "price": 649.00, "label": "Izolat 548 - za injektovanje", "unit": "kg", "increment": 1},
+            {"name": "izolat_ex", "price": 619.00, "label": "Izolat EX 37", "unit": "kg", "increment": 1} 
+            ] 
+        },
+        {"Proteini mesa": [
+            {"name": "g_kolagen", "price": 690.00, "label": "Goveđi protein - kolagen", "unit": "kg", "increment": 1}, 
+            {"name": "s_kolagen", "price": 650.00, "label": "Svinjski protein - kolagen", "unit": "kg", "increment": 1}, 
+            {"name": "emulgotop", "price": 410.00, "label": "Emulgotop", "unit": "kg", "increment": 1} 
+            ] 
+        },
+        {"Polifosfati": [
+            {"name": "tari_k2", "price": 289.00, "label": "TARI K2", "unit": "kg", "increment": 1}, 
+            {"name": "tari_s77", "price": 577.00, "label": "TARI S77", "unit": "kg", "increment": 1}, 
+            {"name": "sofos_7s", "price": 249.00, "label": "SOFOS 7S - za salamurenje", "unit": "kg", "increment": 1},
+            {"name": "sofos_4k", "price": 249.00, "label": "SOFOS 4K - za kuterovanje", "unit": "kg", "increment": 1} 
+            ] 
+        },
+        {"Skrobovi": [
+            {"name": "krompirov_skrob", "price": 75.00, "label": "Krompirov skrob", "unit": "kg", "increment": 1}, 
+            {"name": "vlakna_graska", "price": 222.00, "label": "Vlakna graška - SWILITE", "unit": "kg", "increment": 1}, 
+            {"name": "vlakna_soje", "price": 124.00, "label": "Vlakno soje", "unit": "kg", "increment": 1} 
+            ] 
+        },
+        {"Funkcionalne smeše": [
+            {"name": "emulgofix", "price": 369.00, "label": "Emulgofix - smeša za izradu oblikovanih mesa", "unit": "kg", "increment": 1}, 
+            {"name": "grilomix", "price": 399.00, "label": "Grilomix - komplet smeša za oblikovana mesa", "unit": "kg", "increment": 1}, 
+            {"name": "duboramix", "price": 410.00, "label": "Duboramix - smeša za zrenje trajnih kobasica", "unit": "kg", "increment": 1} 
+            ] 
+        } 
+    ] 
+},
+{"Omotaci" : [
+        {"Poliamidni": [
+            {"name": "betan", "price": 22.80, "label": "Betan 22", "unit": "m", "increment": 1}, 
+            {"name": "amipak", "price": 35.70, "label": "Amipak E", "unit": "m", "increment": 1}, 
+            {"name": "amicel", "price": 42.55, "label": "Amicel", "unit": "m", "increment": 1} 
+            ] 
+        },
+        {"Kolageni omotači - Naturin": [
+            {"name": "ndx_trans", "price": 103.10, "label": "NDX 19 - transparent", "unit": "m", "increment": 1}, 
+            {"name": "ndx_non_smoker", "price": 192.30, "label": "NDX 22 - non smoker", "unit": "m", "increment": 1}, 
+            {"name": "naturin_trans", "price": 200.00, "label": "Naturin 24 - transparent", "unit": "m", "increment": 1},
+            {"name": "naturin_non_smoker", "price": 185.40, "label": "Naturin 33 - non smoker", "unit": "m", "increment": 1} 
+            ] 
+        },
+        {"Celulozni omotači": [
+            {"name": "celulozni_omotaci", "price": 43.70, "label": "O 22 - O 23 Celulozni omotači", "unit": "m", "increment": 1} 
+            ] 
+        }
+    ]
+},
+{"Aditivi i začini": [
+        {"Začini": [
+            {"name": "biber_crni", "price": 600.00, "label": "Biber crni - mleveni", "unit": "kg", "increment": 1}, 
+            {"name": "biber_beli", "price": 800.00, "label": "Biber beli - mleveni", "unit": "kg", "increment": 1}, 
+            {"name": "musk_orah", "price": 1650.00, "label": "Muskatni orah", "unit": "kg", "increment": 1},
+            {"name": "piment", "price": 750.00, "label": "Piment", "unit": "kg", "increment": 1},
+            {"name": "beli_luk_prah", "price": 280.00, "label": "Beli luk u prahu", "unit": "kg", "increment": 1}, 
+            {"name": "korijander", "price": 320.00, "label": "Korijander", "unit": "kg", "increment": 1}, 
+            {"name": "kim", "price": 460.00, "label": "Kim - mleveni", "unit": "kg", "increment": 1},
+            {"name": "paprika_slat", "price": 600.00, "label": "Paprika - slatka mlevena", "unit": "kg", "increment": 1},
+            {"name": "paprika_ljut", "price": 585.00, "label": "Paprika - ljuta mlevena", "unit": "kg", "increment": 1}, 
+            {"name": "paprika_tucana", "price": 400.00, "label": "Paprika - ljuta tucana", "unit": "kg", "increment": 1},
+            {"name": "crni_luk", "price": 600.00, "label": "Crni luk - sušeni", "unit": "kg", "increment": 1} 
+            ] 
+        },
+        {"Ekstrakti začina": [
+            {"name": "biber_ekstr", "price": 850.00, "label": "Ekstrakt bibera 1:1", "unit": "kg", "increment": 1}, 
+            {"name": "musk_orah_ekstr", "price": 980.00, "label": "Ekstrakt muskatnog oraha 1:1", "unit": "kg", "increment": 1}, 
+            {"name": "paprika_tec_kulen", "price": 1500.00, "label": "Tečna paprika - mix za kulen", "unit": "kg", "increment": 1},
+            {"name": "paprika_tec_slatka", "price": 1650.00, "label": "Tečna paprika - slatka", "unit": "kg", "increment": 1},
+            {"name": "paprika_tec_ljuta", "price": 1950.00, "label": "Tečna paprika - ljuta", "unit": "kg", "increment": 1}
+            ] 
+        },
+        {"Ostalo": [
+            {"name": "karagenan", "price": 679.00, "label": "Karagenan", "unit": "kg", "increment": 1}, 
+            {"name": "gov_zelat", "price": 850.00, "label": "Goveđi želatin", "unit": "kg", "increment": 1}, 
+            {"name": "vitamin_c", "price": 700.00, "label": "Vitamin C", "unit": "kg", "increment": 1},
+            {"name": "nit_so", "price": 123.00, "label": "Nitritna so", "unit": "kg", "increment": 1},
+            {"name": "dekstroza", "price": 98.00, "label": "Dekstroza", "unit": "kg", "increment": 1}, 
+            {"name": "mrez_meso", "price": 50.00, "label": "Mrežice za meso - bele", "unit": "m", "increment": 1}, 
+            {"name": "frisco", "price": 635.00, "label": "Friško - sredstvo za održivost i fiksaciju boje", "unit": "kg", "increment": 1},
+            {"name": "a_fresh", "price": 359.00, "label": "A-Fresh - sredstvo za održivost i fiksaciju boje", "unit": "kg", "increment": 1},
+            {"name": "glutaminat", "price": 197.00, "label": "Mono-natrijum glutaminat", "unit": "kg", "increment": 1}, 
+            {"name": "transglutaminaza", "price": 1890.00, "label": "Transglutaminaza", "unit": "kg", "increment": 1}
+            ] 
+        },
+        {"Prirodna creva": [
+            {"name": "ovca", "price": 1100.00, "label": "Ovčja creva 22/24", "unit": "kg", "increment": 1}, 
+            {"name": "svinja_28", "price": 21.00, "label": "Svinjska creva 28/30", "unit": "m", "increment": 1}, 
+            {"name": "svinja_32", "price": 17.00, "label": "Svinjska creva 32/34", "unit": "m", "increment": 1},
+            {"name": "svinja_34", "price": 1550.00, "label": "Svinjska creva 34/36", "unit": "kg", "increment": 1} 
+            ] 
+        }
+    ]
+} 
+]

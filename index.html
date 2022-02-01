@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+
+
+        #checkout-container, #payment-container, #detailed-news {
+            top: 13%;
+        }
+
+        #detailed-news {
+            top: 60%;
+            width: 80%;
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            #checkout-container, #payment-container{
+
+            top: 5%;
+
+            }
+            
+            #detailed-news {
+            top: 10%;
+            position: fixed;
+            width: 30%;
+            }
+
+        }
+
+
+
+        #detailed-news.is-visible {
+            display: block;
+
+        }
+
+    </style>
+    <title>Početna</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><a id="logo-link" href="./index.html"><img src="img/logo_1.svg" alt="Homepage"></a></div>
+        <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
+        <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a><span id="cart-counter" class="cart-basket"></span></div>
+        <nav id="main-nav" role="navigation">
+            <ul>
+                
+                <li><a class="nav-link" href="./about.html">O nama</a></li>
+                <li><a class="nav-link" href="./products.html">Proizvodi</a></li>
+                <li><a class="nav-link" href="./gallery.html">Galerija</a></li>
+                <li><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+
+        <div class="container">
+            
+            <div id="banner-container">
+                <img src="./img/LOGO3 UPDATE.svg" alt="">
+            </div>
+
+            <div class="slider-container-outer">
+                <div class="slider-container" class="slider-container-transition">
+                    <div class="slider-item" data-position="1">
+                        <img src="./galerija/delikates.jpg" alt="">
+                    </div>
+                    <div class="slider-item" data-position="2">
+                        <img src="./galerija/kobasice, sunka.jpg" alt="">
+                    </div>
+                    <div class="slider-item" data-position="3">
+                        <img src="./galerija/krompirov skrob.jpg" alt="">
+                    </div>
+                    <div class="slider-item" data-position="4">
+                        <img src="./galerija/protein.jpg" alt="">
+                    </div>
+                    <div class="slider-item" data-position="5">
+                        <img src="./galerija/rostiljske kobasice .jpg" alt="">
+                    </div>
+                    <div class="slider-item" data-position="6">
+                        <img src="./galerija/zacini.jpg" alt="">
+                    </div>
+                </div>
+
+                <div id="news-container">
+                    <div class="card-body">                              
+                        <div>
+                            <img class="img-fluid" src="./galerija/Free-From-Food-Expo-1-2048x1366.jpg"/>                            
+                            <a href="#0" class="btn-details" id="details-1" data-num="1">Detaljnije</a>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title">Novosti iz industrije</h5>
+                        </div>
+                    </div>
+                    <div class="card-body">                              
+                        <div>
+                            <img class="img-fluid" src="./galerija/Lebensmitteltechnikerin-Lehre.jpg"/>                            
+                            <a href="#0" class="btn-details" id="details-2" data-num="2">Detaljnije</a>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title">Oglas za tehnologa</h5>
+                        </div>
+                    </div>
+                    <div class="card-body">                              
+                        <div>
+                            <img class="img-fluid" src="./galerija/meetingflipchart-57a622873df78cf459059d4d.jpg"/>                            
+                            <a href="#0" class="btn-details" id="details-3" data-num="3">Detaljnije</a>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title">Oglas za komercijalistu</h5>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+    <div class="container-fluid" id="detailed-news">
+
+    </div>
+    </div>
+
+    <div id="cd-shadow-layer"></div>
+
+    <div id="cd-cart">
+        <h2>Korpa</h2>
+        <ul class="cd-cart-items">
+
+        </ul>
+        <div class="cd-cart-total">
+            <p>Total <span>0</span> RSD</p>
+        </div>
+        <a href="#0" class="checkout-btn">Poruči</a>
+
+    </div>
+    <div id="checkout-container">
+
+            <div class="col-50">
+                <h3 id="kartica-h3">Informacije o kupcu</h3>
+                <label for="fname"><i class="fa fa-user"></i> Ime</label>
+                <input type="text" id="fname" name="firstname" class="invalid" placeholder="">
+                <label for="lname"></i> Prezime</label>
+                <input type="text" id="lname" name="lastname" class="invalid" placeholder="">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" class="invalid" placeholder="">
+            </div>
+                
+            <div class="col-50">
+                <label for="state">Država</label>
+                <input type="text" id="state" name="state" class="invalid" placeholder="Srbija">
+            </div>
+            <div class="col-50">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
+                <input type="text" id="adr" name="address" class="invalid" placeholder="">
+                <label for="city"><i class="fa fa-institution"></i> Grad</label>
+                <input type="text" id="city" name="city" class="invalid" placeholder="">
+            </div>
+            <div class="col-50">
+                <label for="zip">Poštanski kod:</label>
+                <input type="text" id="zip" name="zip" class="invalid" placeholder="11000">
+            </div>                    
+            
+            <button class="btn" id="payment-btn"> Plaćanje </button>
+
+
+    </div>
+
+    <div id="payment-container">
+
+            <h3 id="kartica-h3">Plaćanje</h3>
+
+            <div class="col-50">  
+                <label for="cars">Izaberite način plaćanja:</label>
+
+                <select name="nacin-placanja" id="nacin-placanja">
+                    <option value="pouzece">Pouzecem</option>
+                    <option value="kartica">Karticom</option>
+                </select>
+            </div><br />
+
+
+
+            <div class="col-50" id="kartica">          
+                <label for="fname">Izbor kartice:</label>
+                <div class="icon-container">
+                    <i class="fa fa-cc-visa" id="ccvisa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" id ="ccamex"style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" id="ccmaster" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" id="ccdiscover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Ime na kartici:</label>
+                <input type="text" id="cname" name="cardname" class="invalid-c" placeholder="">
+                <label for="ccnum">Broj kartice:</label>
+                <input type="text" id="ccnum" name="cardnumber" class="invalid-c" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Mesec isticanja:</label>
+                <input type="text" id="expmonth" name="expmonth" class="invalid-c" placeholder="September">
+                <div class="row">
+                    <div class="col-50">
+                        <label for="expyear">Godina isticanja:</label>
+                        <input type="text" id="expyear" name="expyear" class="invalid-c" placeholder="2021">
+                    </div>
+                    <div class="col-50">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" class="invalid-c" placeholder="352">
+                    </div>
+                </div>
+                
+            </div>
+            <input type="submit" value="Poruči" class="btn" id='forder-btn'>
+        </div>
+        
+
+    <script src="./js/cart_data.js"></script>
+    <script src="./js/skripta.js"></script>
+    <script src="./js/index.js"></script>
+
+    
+    <footer>
+        <p>Autor: Marko Milosavljević</p>
+        <p><a href="mailto:markomilosavljevic@yahoo.com">markomilosavljevic@yahoo.com</a></p>
+    </footer>
+</body>
+</html>
